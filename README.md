@@ -10,6 +10,5 @@
 <h2>Installation :</h2>
 
 To use the Analog Watch project, simply clone the repository or download the source files.
-<span style="color:blue">thanks for visiting</span>
-<font color="blue">This text is blue</font>
-<font color="red">if you like this project please give star.</font>
+
+thanks for visiting
