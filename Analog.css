@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap')
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Madimi One", sans-serif;
+}
+:root{
+  --dark-color:#27296d;
+  --background-color:#5e63b6;
+  --font-color:#f5c7f7;
+  --other-color:#a393eb;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color:var(--dark-color);
+  color:var(--font-color);
+}
+.container{
+  position: relative;
+}
+.clock{
+  width: 300px;
+  height: 300px;
+  border-radius:50%;
+  background-color:var(--background-color);
+  border: 7px solid var(--other-color);
+  box-shadow:0px 0px 60px var(--other-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock span {
+  position: absolute;
+  transform: rotate(calc(30deg * var(--i)));
+  inset: 12px;
+  text-align: center;
+}
+.clock span b {
+  transform: rotate(calc(-30deg * var(--i)));
+  display: inline-block;
+  font-size: 20px;
+}
+.clock::before{
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color:var(--other-color);
+  z-index: 2;
+}
+.hand{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+}
+.hand i {
+  position: absolute;
+  background-color: var(--clr);
+  width:var(--w);
+  height:var(--h);
+  border-radius: 8px;
+}
